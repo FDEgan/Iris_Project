@@ -14,6 +14,11 @@
     - [Bar Chart](#bar)
     - [Histogram](#hist)
     - [Regression Plot](#regplot)
+  - [Outputs ](#output)
+    - [Dataset Description<](#desc)
+    - [Bar Chart<](#barimg)
+    - [Histogram<](#histimg)
+    - [Regression Plot<](#regimg)  
   - [Summary of Analysis ](#summary-of-analysis-)
   - [Future Research ](#future-research-)
   - [Contributors ](#contributors-)
@@ -309,6 +314,23 @@ plt.tight_layout() # Setting a tight layout so the subplot adjusts as required
 plt.savefig(os.path.join(corr_path, 'Scatter.png')) # Saving the figure to the desired folder
 plt.show() # Showing the plot
 ```
+## Output <a name=output>
+### Dataset Description<a name=desc>
+![description](https://github.com/FDEgan/Iris_Project/assets/157654218/af4a5c9c-7b77-4d37-af8b-4e58799c10b8)
+
+### Bar Chart<a name=barimg>
+![Bar Chart](https://github.com/FDEgan/Iris_Project/assets/157654218/feac957c-92ab-4401-96b6-da23e01d53f4)
+
+### Histogram<a name=histimg>
+![Histogram](https://github.com/FDEgan/Iris_Project/assets/157654218/37ddfdd2-0bb2-4567-bfdb-d6052b5e2d07)
+
+### Regression Plot<a name=regimg>
+![Scatter](https://github.com/FDEgan/Iris_Project/assets/157654218/d0ebb224-cc40-4867-bad0-16a65e230c35)
+
+
+
+
+
 ## Summary of Analysis <a name=summary>
 
 ## Future Research <a name=future>
