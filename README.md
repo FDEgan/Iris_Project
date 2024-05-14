@@ -74,9 +74,9 @@ You might do that for this project as follows:
   - Matplotlib
   - Seaborn
   - Scipy
-  - tabulate
-  - warnings
-  - combinations
+  - Tabulate
+  - Warnings
+  - Combinations
 
 ## Code Example <a name=code>
 ### Configuring Folders for Analysis<a name=conf>
