@@ -6,6 +6,7 @@
   - [Overview ](#overview-)
   - [Repository Structure ](#repository-structure-)
   - [Problem Statement: ](#aims)
+  - [Approach](#approach)
   - [Dataset Description ](#dataset-description-)
   - [Tools Used ](#tools-used-)
   - [Code Example ](#code-example-)
@@ -50,6 +51,13 @@ You might do that for this project as follows:
    2. Saves a histogram of each variable to png files, and
    3. Outputs a scatter plot of each pair of variables.
 4. **Performs any other analysis you think is appropriate.**
+
+## Approach: <a name=approach>
+1. I wanted to focus on producing graphs and plots that had minimum clutter. This is the reasoning for removing redundant axes from the charts.
+2. I wanted to create a folder for each part of the analysis, so as to make it easier when the file is ran to have a clean file structure.
+3. I focused more on creating a small number of graphs that would allow for a strong analysis, as opposed to making alot of graphs that didn't give too much information.
+4. As part of the brief was to have outputs of the analysis, I decided the best approach was to use sub plots to allow a number of graphs to be in a single image file as opposed to saving down each graph individually. 
+   1. In the IPYNB file, where the analysis is carried out, I will have the analysis on each graph individually to make the project easier to interpret for the reader.
 
 
 ## Dataset Description <a name=dataset>
@@ -334,7 +342,14 @@ plt.show() # Showing the plot
 ## Summary of Analysis <a name=summary>
 
 ## Future Research <a name=future>
+If I was to revisit the project in the future, there are a number of areas I would wish to explore, including some areas addressed in the analysis, of which I would like to delve into deeper.
 
+1. The main area I would like to delve into, is the use of machine learning models for predicting the type of flowers.
+2. I would like to refine some of the graphs a bit more to be visually more pleasing.
+3. I would like to revisit how the outputs appear when opened up outside of Python. While some of the graphs looked good when viewed in VSCode, when opened externally, they didn't export as I hoped.
+4. I would like to delve further into the correlation per species of flower to see if there are any species of flowers that are more correlated than others.
+5. My professional background is as a Business Intelligence Developer, so I always want to have interactive and informative graphs. However, while the graphs I designed were informative, they are not very interactive. I have used Plotly sparingly but would like to use it for future projects as it is very interactive for end users.
+6. I would use different methods for calculating the correlation, to see does it differ across ethe Kendalls and Spearmans coefficients.
 
 
 ## Contributors <a name=contributors>
