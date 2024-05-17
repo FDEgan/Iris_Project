@@ -381,6 +381,7 @@ plt.savefig(os.path.join(exp_path, 'Bar Chart.png')) # Saving the plot to the de
 # In[55]:
 
 
+plt.rcParams.update({'font.size': 14}) # Set font sizes
 plt.figure(figsize=(25, 15))  # Setting the size of the plot
 ax = sns.countplot(data=df, # Creating a Countplot using the data from the data frame created
                    y="species", # Coloring based on the species
@@ -404,7 +405,7 @@ for p in ax.patches: # Using a for loop to get and apply a label to each bar in 
                 va='center', # Aligning the labels to veritcally centrally aligned
                 fontsize=14) # Setting the font size
 
-plt.savefig(os.path.join(dist_path, 'CountPlot.png')) # Saving the plot to the desired folder
+plt.savefig(os.path.join(exp_path, 'CountPlot.png')) # Saving the plot to the desired folder
 
 
 # In[56]:
@@ -628,4 +629,115 @@ file_path = os.path.join(folder_path, 'correlation_summary_statistics.txt') # Cr
 with open(file_path, 'w') as file: # Accessing the file path in write mode and if the files exists overwriting it and otherwise creating it
     file.write(corr_summary_txt) # Writing the summary text to a file
 
+plt.rcParams.update({'font.size': 14}) # Set font sizes
 
+# Violin plot for each variable
+plt.figure(figsize=(25, 15))  # Setting the size of the plot
+
+# Violin plot for sepal length
+plt.subplot(2, 2, 1)
+sns.violinplot(data=df, x="species", y="sepal_length", palette="Set1", inner="quartile")
+plt.title('Violin Plot of Sepal Length by Species', fontsize=20)
+plt.xlabel('Species', fontsize=18)
+plt.ylabel('Sepal Length (cm)', fontsize=18)
+
+# Violin plot for sepal width
+plt.subplot(2, 2, 2)
+sns.violinplot(data=df, x="species", y="sepal_width", palette="Set2", inner="quartile")
+plt.title('Violin Plot of Sepal Width by Species', fontsize=20)
+plt.xlabel('Species', fontsize=18)
+plt.ylabel('Sepal Width (cm)', fontsize=18)
+
+# Violin plot for petal length
+plt.subplot(2, 2, 3)
+sns.violinplot(data=df, x="species", y="petal_length", palette="Set3", inner="quartile")
+plt.title('Violin Plot of Petal Length by Species', fontsize=20)
+plt.xlabel('Species', fontsize=18)
+plt.ylabel('Petal Length (cm)', fontsize=18)
+
+# Violin plot for petal width
+plt.subplot(2, 2, 4)
+sns.violinplot(data=df, x="species", y="petal_width", palette="Set1", inner="quartile")
+plt.title('Violin Plot of Petal Width by Species', fontsize=20)
+plt.xlabel('Species', fontsize=18)
+plt.ylabel('Petal Width (cm)', fontsize=18)
+
+plt.tight_layout()
+plt.savefig(os.path.join(exp_path, 'Violin Plot.png')) # Saving the plot to the desired folder
+
+
+plt.figure(figsize=(30, 15)) # Setting the size of the figure
+
+# Plot for sepal width
+plt.subplot(1, 3, 1) # Setting on what sub plot the graph should be positioned
+axe_1 = sns.barplot(data=df_eda, # Using the data from the dataframe created
+                  x="species", # Setting species to be on the x-axis
+                  y="sepal_area",  # Setting sepal width to be on the y-axis
+                  hue="species", # Setting species to be the colour of the bars
+                  color='skyblue', # Setting the color to be Sky Blue
+                  edgecolor='black', # Adding a feint black line around the bars for display purposes
+                  errorbar=None, # Removing the error bar from the graph
+                  legend=False,
+                  dodge=False, # Turning off dodge on the plot so the display looks neater
+                  linewidth=1.5) # Setting the line width of the black line around the bars.
+plt.yticks([]) # Setting the tick marks to be blank by assigning an empty list.
+plt.xticks([]) # Setting the tick marks to be blank by assigning an empty list.
+plt.xlabel('') # Setting the x-axis label to be blank
+plt.ylabel('') # Setting the y-axis label to be blank
+plt.title('Mean Sepal Area Per Species', # Setting the name of the plot
+           size=18, # Setting the font size of the plot
+           color='#4f4e4e') # Setting the color of the title
+
+# Plot for sepal width
+plt.subplot(1, 3, 2) # Setting on what sub plot the graph should be positioned
+axe_2 = sns.barplot(data=df_eda, # Using the data from the dataframe created
+                  x="species", # Setting species to be on the x-axis
+                  y="petal_area",  # Setting sepal width to be on the y-axis
+                  hue="species", # Setting species to be the colour of the bars
+                  color='skyblue', # Setting the color to be Sky Blue
+                  edgecolor='black', # Adding a feint black line around the bars for display purposes
+                  legend=False,
+                  errorbar=None, # Removing the error bar from the graph
+                  dodge=False, # Turning off dodge on the plot so the display looks neater
+                  linewidth=1.5) # Setting the line width of the black line around the bars.
+plt.yticks([]) # Setting the tick marks to be blank by assigning an empty list.
+plt.xticks([]) # Setting the tick marks to be blank by assigning an empty list.
+plt.xlabel('') # Setting the x-axis label to be blank
+plt.ylabel('') # Setting the y-axis label to be blank
+plt.title('Mean Petal Area Per Species', # Setting the name of the plot
+           size=18, # Setting the font size of the plot
+           color='#4f4e4e') # Setting the color of the title
+
+# Plot for sepal width
+plt.subplot(1, 3, 3) # Setting on what sub plot the graph should be positioned
+axe_3 = sns.barplot(data=df_eda, # Using the data from the dataframe created
+                  x="species", # Setting species to be on the x-axis
+                  y="flower_volume",  # Setting sepal width to be on the y-axis
+                  hue="species", # Setting species to be the colour of the bars
+                  color='skyblue', # Setting the color to be Sky Blue
+                  edgecolor='black', # Adding a feint black line around the bars for display purposes
+                  errorbar=None, # Removing the error bar from the graph
+                  legend=True,
+                  dodge=False, # Turning off dodge on the plot so the display looks neater
+                  linewidth=1.5) # Setting the line width of the black line around the bars.
+plt.yticks([]) # Setting the tick marks to be blank by assigning an empty list.
+plt.xticks([]) # Setting the tick marks to be blank by assigning an empty list.
+plt.xlabel('') # Setting the x-axis label to be blank
+plt.ylabel('') # Setting the y-axis label to be blank
+plt.legend(bbox_to_anchor=(1, 1), loc='upper left') # Moving legend to the top right.
+plt.title('Mean Flower Volume Per Species', # Setting the name of the plot
+           size=18, # Setting the font size of the plot
+           color='#4f4e4e') # Setting the color of the title
+sns.despine(left=True) # Using the despine function to remove the axis lines on the left hand side
+
+
+# Add a title to the figure
+plt.suptitle('Mean Measurement Per Species', size=24, color='#4f4e4e') # Setting the overall title of the graph
+
+bar_label(axe_1) # Applying the function to the plot
+bar_label(axe_2) # Applying the function to the plot
+bar_label(axe_3) # Applying the function to the plot
+
+
+# Show plot
+plt.savefig(os.path.join(exp_path, 'Bar Chart Calculated Variables.png')) # Saving the plot to the desired folder
