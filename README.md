@@ -5,6 +5,7 @@
   - [Table of Contents](#table-of-contents)
   - [Overview ](#overview-)
   - [Repository Structure ](#repository-structure-)
+  - [Running The Python File](#runcode)
   - [Problem Statement: ](#aims)
   - [Approach](#approach)
   - [Dataset Description ](#dataset-description-)
@@ -39,6 +40,30 @@ This project focuses on analyzing the Fisher Iris dataset is a popular dataset, 
 - `README.md`: Overview of the project and repository.
 - `.gitignore`: File to specify untracked files to ignore in the repository.
 
+## Running The Python File <a name=runcode>
+1. To install the correct libraries, run the below code in your terminal
+   ```
+      pip install pandas tabulate matplotlib seaborn scipy
+   ```
+2. To run the code, navigate to where the analysis.py file has been downloaded to and copy the file path
+3. Open up your terminal, cmd or other option and input the below code. Replace the below code with the file path and include double quotations at the start and end of the file path.
+   ```
+   cd "C:\Users\Barry\Programming & Scripting\Iris Project"
+   ```
+4. Run the below code in terminal, cmd or other option and run the below code:
+   ```
+    python analysis.py
+   ```
+The below files should be saved to the file path you entered:
+
+   | Folder         | File Name                                   |
+|-------------------|-----------------------------------------------|
+| Correlation        | Scatter.png                                                                                                          |
+| Distribution       | BoxPlot.png, Histogram.png                                                                                           |
+| Exploratory        | Bar Chart Calculated Variables.png, Bar Chart.png, CountPlot.png, Violin Plot.png                                    |
+| Summary            | background.png, description.png, variables.png                                                                       |
+| Text Files         | correlation_summary_statistics.txt, distribution_summary_statistics.txt, species_summary_statistics.txt, summary_statistics.txt  |
+   
 ## Problem Statement: <a name=aims>
 This project concerns the well-known Fisher’s Iris data set. You must research the data set and write documentation and code (in Python [1]) to investigate it. An online search for information on the data set will convince you that many people have investigated it previously. You are expected to be able to break this project into several smaller tasks that are easier to solve, and to plug these together after they have been completed.  
 
