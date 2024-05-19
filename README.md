@@ -43,7 +43,7 @@ This project focuses on analyzing the Fisher Iris dataset is a popular dataset, 
 ## Running The Python File <a name=runcode>
 1. To install the correct libraries, run the below code in your terminal
    ```
-      pip install pandas tabulate matplotlib seaborn scipy
+      pip install pandas tabulate matplotlib seaborn scipy numpy
    ```
 2. To run the code, navigate to where the analysis.py file has been downloaded to and copy the file path
 3. Open up your terminal, cmd or other option and input the below code. Replace the below code with the file path and include double quotations at the start and end of the file path.
