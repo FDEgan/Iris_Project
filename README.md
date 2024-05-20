@@ -403,9 +403,9 @@ The `petal_length` and `petal_width` are:
 2. There is a p-value of 0.00 and a R-Squared value of 0.93, indicating statistical significance in the correlation and a high precision and confidence in the model fit. 
 3. The data points are tightly grouped and the regression line is upward sloping, further suggesting a strong model fit and very strong correlation.
 
-The `petal_length` and `petal_width` are:
-1. Very strongly positively correlated with a correlation of 0.96.
-2. There is a p-value of 0.00 and a R-Squared value of 0.93, indicating statistical significance in the correlation and a high precision and confidence in the model fit. 
+The `sepal_length` and `petal_width` are:
+1. Very strongly positively correlated with a correlation of 0.82.
+2. There is a p-value of 0.00 and a R-Squared value of 0.67, indicating statistical significance in the correlation and a relatively good precision and confidence in the model fit. 
 3. The data points are tightly grouped and the regression line is upward sloping, further suggesting a strong model fit and very strong correlation.
 
 
