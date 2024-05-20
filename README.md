@@ -366,6 +366,49 @@ plt.show() # Showing the plot
 
 ## Summary of Analysis <a name=summary>
 
+**Exploratory Data Analysis**
+1. The setosa flowers `petal_width` and `petal_length` allows it to be easily identifed from the virginica and versicolor flowers, as it is noticeably smaller.
+2. The versicolor and virginica flowers are very similar across there measurements but the virginica has generally larger petals
+
+
+**Distribution Analysis**<br>
+1. `sepal_length` was slightly left skewed with values ranging from 4.3cm to 7.9cm. It had a platykurtic distribution.
+2. `sepal_width` was slightly left skewed with values ranging from 2cm to 4.4cm. It had a leptokurtic distribution.
+3. `petal_length` was slightly right skewed with values ranging from 1cm to 6.9cm. It had a leptokurtic distribution.
+4. `petal_width` was right skewed with values ranging from 0.1cm to 2.5cm. It had a leptokurtic distribution.
+
+**Correlation Analysis**
+The `sepal_length` and `sepal_width` are:
+1. Very weakly negatively correlated with a correlation of -0.12.
+2. There is a p-value of 0.15 and a R-Squared value of 0.01, indicating statistical insignificance in the correlation and a poor model fit. 
+3. The data points are sparsely distributed and there is a relatively flat regression line, further suggesting a poor fit and weak correlation.
+   
+The `sepal_length` and `petal_length` are:
+1. Very strongly positively correlated with a correlation of 0.87.
+2. There is a p-value of 0.00 and a R-Squared value of 0.76, indicating statistical significance in the correlation and a good model fit. 
+3. The data points are closely clustered and the regression line is upward sloping, further suggesting a good fit and very strong correlation.
+
+The `petal_length` and `sepal_width` are:
+1. Moderately negatively correlated with a correlation of -0.43.
+2. There is a p-value of 0.00 and a R-Squared value of 0.18, indicating statistical significance in the correlation but a poor model fit. 
+3. The data points are spread widely and the regression line is downward sloping, further suggesting a poor fit and poor to moderate negative correlation.
+
+The `petal_width` and `sepal_width` are:
+1. Weakly negatively correlated with a correlation of -0.37.
+2. There is a p-value of 0.00 and a R-Squared value of 0.13, indicating statistical significance in the correlation but a poor model fit. 
+3. The data points are spread widely and the regression line is downward sloping, further suggesting a poor fit and poor to moderate negative correlation.
+
+The `petal_length` and `petal_width` are:
+1. Very strongly positively correlated with a correlation of 0.96.
+2. There is a p-value of 0.00 and a R-Squared value of 0.93, indicating statistical significance in the correlation and a high precision and confidence in the model fit. 
+3. The data points are tightly grouped and the regression line is upward sloping, further suggesting a strong model fit and very strong correlation.
+
+The `petal_length` and `petal_width` are:
+1. Very strongly positively correlated with a correlation of 0.96.
+2. There is a p-value of 0.00 and a R-Squared value of 0.93, indicating statistical significance in the correlation and a high precision and confidence in the model fit. 
+3. The data points are tightly grouped and the regression line is upward sloping, further suggesting a strong model fit and very strong correlation.
+
+
 ## Future Research <a name=future>
 If I was to revisit the project in the future, there are a number of areas I would wish to explore, including some areas addressed in the analysis, of which I would like to delve into deeper.
 
